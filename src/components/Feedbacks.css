@@ -1,0 +1,23 @@
+.custom-arrow {
+	position: absolute;
+	top: -60px; /* Adjust the top position to move the buttons above the slider */
+	z-index: 1;
+	font-size: 24px;
+	cursor: pointer;
+	color: #cc9933; /* Customize the arrow color */
+	background-color: transparent;
+	border: none;
+	padding: 5px;
+}
+
+.custom-next {
+	right: 0;
+}
+
+.custom-prev {
+	left: 0;
+}
+
+.slick-dots {
+	margin-top: 50px; /* Push the dots below the slider */
+}
