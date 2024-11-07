@@ -7,6 +7,12 @@ import land_icon from '../../assets/icons/land_icon_p.svg';
 import Achievements from '../achievements';
 import Notifications from '../notifications';
 import ContactUs from '../contactUs';
+import house1 from '../../assets/images/house1.jpg';
+import house2 from '../../assets/images/house11.jpg';
+import house3 from '../../assets/images/house8.jpg';
+import house4 from '../../assets/images/house13.jpg';
+import house5 from '../../assets/images/house9.jpg';
+import house6 from '../../assets/images/house7.jpg';
 
 const properties = [
 	{
@@ -17,7 +23,7 @@ const properties = [
 		bedrooms: '4',
 		size: '122 SQFT',
 		bathrooms: '2',
-		house: '/src/assets/images/house1.jpg',
+		house: house1,
 	},
 	{
 		id: 2,
@@ -27,7 +33,7 @@ const properties = [
 		bedrooms: '3',
 		size: '200 SQFT',
 		bathrooms: '3',
-		house: '/src/assets/images/house3.jpg',
+		house: house2,
 	},
 	{
 		id: 3,
@@ -37,7 +43,7 @@ const properties = [
 		bedrooms: '3',
 		size: '180 SQFT',
 		bathrooms: '2',
-		house: '/src/assets/images/house6.jpg',
+		house: house3,
 	},
 	{
 		id: 4,
@@ -47,7 +53,7 @@ const properties = [
 		bedrooms: '3',
 		size: '180 SQFT',
 		bathrooms: '2',
-		house: '/src/assets/images/house12.jpg',
+		house: house4,
 	},
 	{
 		id: 5,
@@ -57,7 +63,7 @@ const properties = [
 		bedrooms: '3',
 		size: '180 SQFT',
 		bathrooms: '2',
-		house: '/src/assets/images/house10.jpg',
+		house: house5,
 	},
 	{
 		id: 6,
@@ -67,7 +73,7 @@ const properties = [
 		bedrooms: '3',
 		size: '180 SQFT',
 		bathrooms: '2',
-		house: '/src/assets/images/house7.jpg',
+		house: house6,
 	},
 	// Add more properties as needed
 ];

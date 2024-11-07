@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from 'react-scroll';
-import video_source from '../assets/video/Mohyas_vid.mp4';
+import video_source from '../assets/video/Mohyas.mp4';
 import { useRef, useState } from 'react';
 import { FaPlay, FaPause } from 'react-icons/fa';
 
