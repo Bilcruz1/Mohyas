@@ -6,17 +6,21 @@ import Services from '../services.jsx';
 import Latest from '../latest.jsx';
 import Founder from '../founder.jsx';
 import Feedbacks from '../feedbacks.jsx';
+import ContactUs from '../contactUs.jsx';
 
 const Home = () => {
 	return (
 		<>
-			<HeroSection />
-			<About />
-			<WhyUs />
-			<Services />
-			<Latest />
-			<Founder />
-			<Feedbacks />
+			<div className="font-sans">
+				<HeroSection />
+				<About />
+				<WhyUs />
+				<Services />
+				<Latest />
+				<Founder />
+				<Feedbacks />
+				<ContactUs />
+			</div>
 		</>
 	);
 };

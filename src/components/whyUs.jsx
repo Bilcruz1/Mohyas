@@ -11,10 +11,10 @@ export default function WhyUs() {
 
 			{/* Left-Aligned Content Section */}
 			<div className="bg-[#ffffff] lg:w-[60%] w-[85%]  lg:py-[40px] py-[20px] lg:px-[40px] px-[20px] z-10 shadow-lg absolute left-0 lg:ml-[110px] ml-[16px]">
-				<h1 className="text-[#CC9933] lg:text-[40px] text-[24px] font-cabinet-bold font-bold text-left">
+				<h1 className="text-[#CC9933] lg:text-[40px] text-[24px] font-montserrat  font-bold text-left">
 					Why Choose Us
 				</h1>
-				<p className="lg:mt-[16px] mt-[6px] lg:text-[20px] text-[12px] font-sans lg:leading-[43px] leading-[20px] text-[#666666] text-left">
+				<p className="lg:mt-[16px] mt-[6px]  lg:text-[20px] text-[12px] font-sans lg:leading-[43px] leading-[20px] text-[#666666] text-left">
 					At Mohyas Prime Estate, we pride ourselves on offering personalized
 					service, unmatched market expertise, and exclusive listings you won't
 					find elsewhere.

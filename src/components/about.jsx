@@ -12,7 +12,7 @@ export default function About() {
 				id="about"
 			>
 				<div>
-					<p className="text-center  lg:text-[40px] text-[24px] text-[#CC9933] font-cabinet-bold font-bold">
+					<p className="text-center  lg:text-[40px] text-[24px] text-[#CC9933] font-montserrat  font-bold">
 						Our Journey
 					</p>
 					<div className="flex flex-col lg:flex-row w-full lg:mt-[40px] mt-[24px] lg:gap-[40px] items-stretch font-sans">
@@ -46,10 +46,10 @@ export default function About() {
 						{/* Content Section */}
 						<div className="w-full lg:w-1/2  lg:px-[0px] px-[16px] lg:mt-[0px] mt-[24px] flex flex-col justify-center">
 							<div>
-								<p className=" text-[#333333] lg:text-[24px] text-[20px] font-cabinet-medium font-medium">
+								<p className=" text-[#333333] lg:text-[24px] text-[20px] font-montserrat font-medium">
 									About Mohyas Prime Estate
 								</p>
-								<p className="lg:pt-[20px] pt-[16px] text-[#666666] lg:text-[20px] text-[16px] lg:leading-[43px] leading-[36px] font-sans ">
+								<p className="lg:pt-[20px] pt-[16px] text-[#666666] lg:text-[20px]  text-[16px] lg:leading-[43px] leading-[36px] font-sans ">
 									Established with a vision to redefine the real estate
 									market, Mohyas Prime Estate has grown into a trusted name for
 									luxury properties. Our mission is to provide exceptional
@@ -62,7 +62,7 @@ export default function About() {
 								</p>
 							</div>
 							<Link
-								className="rounded-md hover:cursor-pointer bg-[#CC9933] text-[16px] text-[#ffffff] font-cabinet-bold font-bold  px-[30px] py-[12px] text-base lg:flex items-center w-fit lg:mt-[46px] mt-[24px] "
+								className="rounded-md hover:cursor-pointer bg-[#CC9933] text-[16px] text-[#ffffff]  font-bold  px-[30px] py-[12px] text-base lg:flex items-center w-fit lg:mt-[46px] mt-[24px] "
 								to="contact"
 								duration={500}
 								smooth={true}

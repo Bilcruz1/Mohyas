@@ -5,18 +5,12 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				montserrat: ['Montserrat'],
 			},
 			fontFamily: {
-				'cabinet-thin': ['"Cabinet Grotesk Thin"'],
-				'cabinet-extralight': ['"Cabinet Grotesk Extralight"'],
-				'cabinet-light': ['"Cabinet Grotesk Light"'],
-				'cabinet-regular': ['"Cabinet Grotesk Regular"'],
-				'cabinet-medium': ['"Cabinet Grotesk Medium"'],
-				'cabinet-semibold': ['"Cabinet Grotesk Semibold"'],
-				'cabinet-bold': ['"Cabinet Grotesk Bold"'],
-				'cabinet-extrabold': ['"Cabinet Grotesk Extrabold"'],
-				'cabinet-black': ['"Cabinet Grotesk Black"'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			},
+
 			keyframes: {
 				fadeSlideDown: {
 					'0%': { opacity: '0', transform: 'translateY(-20%)' },

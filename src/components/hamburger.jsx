@@ -45,6 +45,13 @@ function Hamburger({ setIsOpen }) {
 		} else {
 			navigate(path);
 			handleClose();
+			// Smooth scroll to top after navigation
+			setTimeout(() => {
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
+			}, 100); // Adjust this delay if necessary
 		}
 	};
 
@@ -137,11 +144,18 @@ function Hamburger({ setIsOpen }) {
 
 					{/* Divider */}
 					<div className="w-full h-[1px] bg-[#666666]"></div>
-					<a href="#">
+					<ScrollLink
+						to="contact"
+						duration={500}
+						smooth={true}
+						offset={-70}
+						onClick={() => handleNavigation('/', 'team')}
+						className="text-[16px] cursor-pointer text-[#666666]"
+					>
 						<button className="rounded-md hover:cursor-pointer text-[#666666] border-[#666666] border-[3px] px-[18px] py-[12px] text-[16px] font-medium lg:flex items-center ">
 							Contact us
 						</button>
-					</a>
+					</ScrollLink>
 
 					{/* Navigate to Property Listing Page */}
 

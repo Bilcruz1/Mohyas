@@ -62,7 +62,7 @@ export default function Latest() {
 				id="property"
 			>
 				<div className="w-full">
-					<h1 className="text-[#CC9933] lg:text-[40px] text-[24px] font-cabinet-bold font-bold w-full text-center">
+					<h1 className="text-[#CC9933] lg:text-[40px] text-[24px] font-montserrat font-bold w-full text-center">
 						Latest from Mohyaz
 					</h1>
 					<p className="pt-[16px] lg:px-[234px] px-[16px] text-[#333333] lg:text-[20px] text-[16px] leading-[32px] text-center font-sans">

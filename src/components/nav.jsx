@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/mohyas_logo.svg';
 import { HiMenu } from 'react-icons/hi';
-import { Link as RouterLink, useNavigate, useLocation } from 'react-router-dom'; // For routing
-import { Link as ScrollLink, scroller } from 'react-scroll'; // For scrolling inside homepage
+import { Link as RouterLink, useNavigate, useLocation } from 'react-router-dom';
+import { Link as ScrollLink, scroller } from 'react-scroll';
 import Hamburger from './hamburger.jsx';
 
 export default function Nav() {
@@ -10,6 +10,11 @@ export default function Nav() {
 	const [activeSection, setActiveSection] = useState('home');
 	const navigate = useNavigate();
 	const location = useLocation();
+
+	// Scroll to top on route change
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location.pathname]);
 
 	// Sections to track for scrolling
 	const sections = ['home', 'about', 'services', 'contact'];
@@ -22,7 +27,6 @@ export default function Nav() {
 		}
 	}, [location]);
 
-	// Add scroll event listener to track active section
 	useEffect(() => {
 		const handleScroll = () => {
 			sections.forEach(section => {
@@ -52,11 +56,11 @@ export default function Nav() {
 			setTimeout(() => {
 				scroller.scrollTo(section, {
 					smooth: true,
-					offset: -70, // Adjust this offset as per your navbar height
+					offset: -70,
 					duration: 500,
 				});
 				setActiveSection(section);
-			}, 100); // Small delay for navigation
+			}, 100);
 		} else {
 			scroller.scrollTo(section, {
 				smooth: true,
@@ -67,11 +71,10 @@ export default function Nav() {
 		}
 	};
 
-	// Active and inactive styles for font size and underline
 	const activeStyle = {
 		color: '#ffffff',
 		fontWeight: 'bold',
-		fontSize: '18px',
+		fontSize: '16px',
 		position: 'relative',
 	};
 
@@ -113,7 +116,6 @@ export default function Nav() {
 						<HiMenu className="w-8 h-8" />
 					</button>
 					<div className="lg:flex justify-between items-center gap-[20px] hidden font-cabinet-bold text-[16px]">
-						{/* Scroll Link for Home */}
 						<button
 							onClick={() => scrollToSection('home')}
 							className="cursor-pointer relative"
@@ -122,8 +124,6 @@ export default function Nav() {
 							Home
 							{activeSection === 'home' && <span style={underlineStyle} />}
 						</button>
-
-						{/* Scroll Link for About Us */}
 						<button
 							onClick={() => scrollToSection('about')}
 							className="cursor-pointer relative"
@@ -132,8 +132,6 @@ export default function Nav() {
 							About Us
 							{activeSection === 'about' && <span style={underlineStyle} />}
 						</button>
-
-						{/* Route to Property Listing */}
 						<RouterLink
 							to="/property-listing"
 							className="cursor-pointer relative"
@@ -143,8 +141,6 @@ export default function Nav() {
 							Property Listing
 							{activeSection === 'property' && <span style={underlineStyle} />}
 						</RouterLink>
-
-						{/* Scroll Link for Services */}
 						<button
 							onClick={() => scrollToSection('services')}
 							className="cursor-pointer relative"
@@ -153,8 +149,6 @@ export default function Nav() {
 							Services
 							{activeSection === 'services' && <span style={underlineStyle} />}
 						</button>
-
-						{/* Scroll Link for Contact */}
 						<button
 							onClick={() => scrollToSection('contact')}
 							className="cursor-pointer relative"
@@ -164,7 +158,7 @@ export default function Nav() {
 							{activeSection === 'contact' && <span style={underlineStyle} />}
 						</button>
 					</div>
-					<button className="rounded-md hover:cursor-pointer text-[#ffffff] border-[#ffffff] border-[3px] px-[30px] py-[16px] text-[16px] font-medium lg:flex items-center hidden">
+					<button className="rounded-lg hover:cursor-pointer text-[#ffffff] border-[#ffffff] border-[3px] px-[30px] py-[12px] text-[16px] font-medium lg:flex items-center hidden">
 						Contact us
 					</button>
 				</div>

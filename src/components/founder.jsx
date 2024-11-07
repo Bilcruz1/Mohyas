@@ -24,10 +24,10 @@ export default function Founder() {
 						{/* Content Section */}
 						<div className="w-full lg:w-1/2  lg:px-[0px] px-[16px] lg:mt-[0px] mt-[24px] flex flex-col justify-center">
 							<div>
-								<p className=" text-[#333333] lg:text-[32px] text-[24px] font-cabinet-medium font-medium">
+								<p className=" text-[#333333] font-montserrat lg:text-[32px] text-[24px] font-cabinet-medium font-medium">
 									Abdulbariu Hassan
 								</p>
-								<p className="text-[#333333] lg:text-[16px] text-[16px] font-cabinet-medium font-medium">
+								<p className="text-[#333333] font-montserrat lg:text-[16px] text-[16px] font-cabinet-medium font-medium">
 									Founder Mohyas
 								</p>
 								<p className="lg:pt-[16px] pt-[16px] text-[#666666] lg:text-[20px] text-[16px] lg:leading-[43px] leading-[36px] font-sans ">

@@ -9,7 +9,7 @@ export default function Services() {
 				id="services"
 			>
 				<div className=" w-full lg:px-[110px] ">
-					<h1 className="text-[#CC9933] lg:text-[40px] text-[24px]  font-bold font-cabinet-bold  w-full  text-center">
+					<h1 className="text-[#CC9933] lg:text-[40px] text-[24px]  font-bold font-montserrat  w-full  text-center">
 						Our Services
 					</h1>
 
@@ -27,7 +27,7 @@ export default function Services() {
 									alt="home3"
 									className=""
 								/>
-								<h1 className="pt-[24px] text-[#333333] font-bold lg:text-[24px] text-[20px] font-sans">
+								<h1 className="pt-[24px] text-[#333333] font-montserrat font-bold lg:text-[24px] text-[20px] ">
 									Free Consultation
 								</h1>
 								<p className="pt-[12px] text-[#666666] text-[16px] leading-[28px] ">
@@ -42,7 +42,7 @@ export default function Services() {
 									alt="home3"
 									className=""
 								/>
-								<h1 className="pt-[24px] font-bold text-[24px]">
+								<h1 className="pt-[24px] font-montserrat font-bold text-[24px]">
 									Free Consultation
 								</h1>
 								<p className="pt-[12px] text-[16px] leading-[28px] ">
@@ -57,7 +57,7 @@ export default function Services() {
 									alt="home3"
 									className=""
 								/>
-								<h1 className="pt-[24px] font-bold text-[24px]">
+								<h1 className="pt-[24px] font-montserrat font-bold text-[24px]">
 									Free Consultation
 								</h1>
 								<p className="pt-[12px] text-[16px] leading-[28px] ">
@@ -72,7 +72,7 @@ export default function Services() {
 									alt="home3"
 									className=""
 								/>
-								<h1 className="pt-[24px] font-bold text-[24px]">
+								<h1 className="pt-[24px] font-montserrat font-bold text-[24px]">
 									Free Consultation
 								</h1>
 								<p className="pt-[12px] text-[16px] leading-[28px] ">
